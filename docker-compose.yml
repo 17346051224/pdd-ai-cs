@@ -26,8 +26,8 @@ services:
   # 前端服务
   frontend:
     build:
-      context: ./frontend
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: frontend/Dockerfile
     container_name: pdd-cs-frontend
     ports:
       - "3000:80"
